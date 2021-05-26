@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - kadabrait_content
+    - system
+    - user
+  theme:
+    - bartik
+id: listar3nodos
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: klist_nodos_block
+settings:
+  id: klist_nodos_block
+  label: 'Listar 3 Nodos'
+  provider: kadabrait_content
+  label_display: visible
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

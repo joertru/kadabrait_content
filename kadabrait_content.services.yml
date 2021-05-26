@@ -1,0 +1,7 @@
+services:
+  logger.channel.kadabrait_content:
+    parent: logger.channel_base
+    arguments: ['kadabrait_content']
+  kadabrait_content.default:
+    class: Drupal\kadabrait_content\KadrabaService
+    arguments: []

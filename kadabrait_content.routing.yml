@@ -1,0 +1,8 @@
+
+kadabrait_content.kadabra_controller_main:
+  path: '/kadabra/list'
+  defaults:
+    _controller: '\Drupal\kadabrait_content\Controller\KadabraController::main'
+    _title: 'main'
+  requirements:
+    _role: 'authenticated'

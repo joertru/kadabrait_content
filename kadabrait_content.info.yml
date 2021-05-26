@@ -1,0 +1,9 @@
+name: kadabrait_content
+type: module
+description: 'Prueba técnica Jorge E.'
+package: Custom
+core_version_requirement: '^8.8.0 || ^9.0'
+dependencies:
+  - kadabrait_content
+  - system
+  - user
